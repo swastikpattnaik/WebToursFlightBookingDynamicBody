@@ -1,0 +1,94 @@
+[
+    {
+        "actionName": "User_Login",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t1.inf",
+                "time": 1590940957044
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t2.inf",
+                "time": 1590940962303
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "SC02_BookingFlight_T01_LaunchPage",
+                "rawStartTime": 1590940956504,
+                "rawEndTime": 1590940957048,
+                "thinkTime": 0.0,
+                "wastedTime": 0.21862220764160157
+            },
+            {
+                "transactionName": "SC02_BookingFlight_T02_Login",
+                "rawStartTime": 1590940962064,
+                "rawEndTime": 1590940962307,
+                "thinkTime": 0.0,
+                "wastedTime": 0.012122869491577149
+            }
+        ]
+    },
+    {
+        "actionName": "Flight_Booking",
+        "steps": [
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: Search Flights Button",
+                "infFile": "t5.inf",
+                "time": 1590940967622
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Custom Request: reservations.pl",
+                "infFile": "t8.inf",
+                "time": 1590940973004
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Custom Request: reservations.pl_2",
+                "infFile": "t10.inf",
+                "time": 1590940978195
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Custom Request: reservations.pl_3",
+                "infFile": "t16.inf",
+                "time": 1590940983402
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "SC02_BookingFlight_T03_ClickFlights",
+                "rawStartTime": 1590940967403,
+                "rawEndTime": 1590940967625,
+                "thinkTime": 0.0,
+                "wastedTime": 0.013845443725585938
+            },
+            {
+                "transactionName": "SC02_BookingFlight_T04_FindFlights",
+                "rawStartTime": 1590940972857,
+                "rawEndTime": 1590940973007,
+                "thinkTime": 0.0,
+                "wastedTime": 0.009013652801513672
+            },
+            {
+                "transactionName": "SC02_BookingFlight_T05_SelectFlight",
+                "rawStartTime": 1590940978061,
+                "rawEndTime": 1590940978199,
+                "thinkTime": 0.0,
+                "wastedTime": 0.005730867385864258
+            },
+            {
+                "transactionName": "SC02_BookingFlight_T06_SetPaymentDetails",
+                "rawStartTime": 1590940983274,
+                "rawEndTime": 1590940983406,
+                "thinkTime": 0.0,
+                "wastedTime": 0.004897356033325195
+            }
+        ]
+    }
+]

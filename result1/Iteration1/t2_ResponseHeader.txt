@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Sun, 31 May 2020 16:02:42 GMT
+Server: Apache/2.2.21 (Win32)
+Expires: 5s
+Set-Cookie: MTUserInfo=firstName&Swastik&address2&Bhubaneswar&username&sp1&hash&49&lastName&Pattnaik%0A&address1&Plot%20No.-57%2FB%2C%20Unit-7%2C%20Suryanagar&creditCard&2123%204565%203323%209098&expDate&06%2F27%0A; path=/
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=ISO-8859-1
+

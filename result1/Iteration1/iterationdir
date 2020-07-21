@@ -1,0 +1,8 @@
+[User_Login]
+SnapshotIndex=I1_User_Login
+[vuser_init]
+SnapshotIndex=I1_vuser_init
+[vuser_end]
+SnapshotIndex=I1_vuser_end
+[Flight_Booking]
+SnapshotIndex=I1_Flight_Booking

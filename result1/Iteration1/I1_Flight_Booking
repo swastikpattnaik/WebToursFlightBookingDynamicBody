@@ -1,0 +1,12 @@
+[t5]
+PassCount=1
+Pass1=t8
+[t6]
+PassCount=1
+Pass1=t10
+[t7]
+PassCount=1
+Pass1=t16
+[t4]
+PassCount=1
+Pass1=t5

@@ -1,0 +1,431 @@
+Virtual User Script started at: 31-05-2020 21:32:36
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.60.0 (Aug 09 2018 11:27:13)  	[MsgId: MMSG-27143]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows; en) AppleWebKit/ (KHTML, like Gecko) Chrome/36.0.1985.125  	[MsgId: MMSG-26988]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action User_Login.
+User_Login.c(3): web_set_sockets_option started  	[MsgId: MMSG-26355]
+User_Login.c(3): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+User_Login.c(5): web_reg_find started  	[MsgId: MMSG-26355]
+User_Login.c(5): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+User_Login.c(9): Notify: Transaction "SC02_BookingFlight_T01_LaunchPage" started.
+User_Login.c(13): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+User_Login.c(13): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+User_Login.c(23): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+User_Login.c(23): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+User_Login.c(31): web_url("WebTours") started  	[MsgId: MMSG-26355]
+User_Login.c(31): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+User_Login.c(31): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+User_Login.c(31): Detected non-resource "http://127.0.0.1:1080/WebTours/header.html" in "http://127.0.0.1:1080/WebTours/"  	[MsgId: MMSG-26574]
+User_Login.c(31): Detected non-resource "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true" in "http://127.0.0.1:1080/WebTours/"  	[MsgId: MMSG-26574]
+User_Login.c(31): Found resource "http://127.0.0.1:1080/WebTours/images/hp_logo.png" in HTML "http://127.0.0.1:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+User_Login.c(31): Found resource "http://127.0.0.1:1080/WebTours/images/webtours.png" in HTML "http://127.0.0.1:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+User_Login.c(31): Detected non-resource "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+User_Login.c(31): Detected non-resource "http://127.0.0.1:1080/WebTours/home.html" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+User_Login.c(31): Notify: Saving Parameter "cUserSession = 128873.305467801zzciQcApzfDQHHDpfcDQ".
+User_Login.c(31): Notify: Saving Parameter "cJSFormSubmit1 = off".
+User_Login.c(31): Found resource "http://127.0.0.1:1080/WebTours/images/mer_login.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+User_Login.c(31): Registered web_reg_find successful for "Text=Welcome to the Web Tours site." (count=1)  	[MsgId: MMSG-26364]
+User_Login.c(31): Notify: Saving Parameter "Welcome_Count = 1".
+User_Login.c(31): web_url("WebTours") was successful, 10072 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+User_Login.c(41): Notify: Parameter Substitution: parameter "Welcome_Count" =  "1"
+User_Login.c(43): Notify: Transaction "SC02_BookingFlight_T01_LaunchPage" ended with a "Pass" status (Duration: 0.5444 Wasted Time: 0.2186).
+User_Login.c(51): Think time - Waiting 5.00 seconds (according to limit).
+User_Login.c(51): lr_think_time: 5.00 seconds (recorded think time was 10.00 seconds).
+User_Login.c(53): web_reg_find started  	[MsgId: MMSG-26355]
+User_Login.c(53): Notify: Parameter Substitution: parameter "pUsername" =  "sp1"
+User_Login.c(53): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+User_Login.c(57): Notify: Transaction "SC02_BookingFlight_T02_Login" started.
+User_Login.c(59): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+User_Login.c(59): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+User_Login.c(59): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+User_Login.c(59): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+User_Login.c(59): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+User_Login.c(59): Notify: Parameter Substitution: parameter "cUserSession" =  "128873.305467801zzciQcApzfDQHHDpfcDQ"
+User_Login.c(59): Notify: Parameter Substitution: parameter "pUsername" =  "sp1"
+User_Login.c(59): Notify: Next row for parameter pPassword = 1 [table  = pPassword].
+User_Login.c(59): Notify: Parameter Substitution: parameter "pPassword" =  "sipusipu"
+User_Login.c(59): Notify: Parameter Substitution: parameter "cJSFormSubmit1" =  "off"
+User_Login.c(59): Detected non-resource "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://127.0.0.1:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+User_Login.c(59): Detected non-resource "http://127.0.0.1:1080/cgi-bin/login.pl?intro=true" in "http://127.0.0.1:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+User_Login.c(59): Found resource "http://127.0.0.1:1080/WebTours/images/flights.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+User_Login.c(59): Found resource "http://127.0.0.1:1080/WebTours/images/itinerary.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+User_Login.c(59): Found resource "http://127.0.0.1:1080/WebTours/images/in_home.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+User_Login.c(59): Found resource "http://127.0.0.1:1080/WebTours/images/signoff.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+User_Login.c(59): Registered web_reg_find successful for "Text=Welcome, <b>sp1</b>, to the Web Tours reservation pages." (count=1)  	[MsgId: MMSG-26364]
+User_Login.c(59): Notify: Saving Parameter "WelcomeHome_Count = 1".
+User_Login.c(59): web_submit_data("login.pl") was successful, 5778 body bytes, 2129 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+User_Login.c(76): Notify: Parameter Substitution: parameter "WelcomeHome_Count" =  "1"
+User_Login.c(78): Notify: Transaction "SC02_BookingFlight_T02_Login" ended with a "Pass" status (Duration: 0.2426 Wasted Time: 0.0121).
+User_Login.c(86): Think time - Waiting 5.00 seconds (according to limit).
+User_Login.c(86): lr_think_time: 5.00 seconds (recorded think time was 10.00 seconds).
+Ending action User_Login.
+Starting action Flight_Booking.
+Flight_Booking.c(18): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Flight_Booking.c(18): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(40): web_reg_save_param_regexp started  	[MsgId: MMSG-26355]
+Flight_Booking.c(40): Registering web_reg_save_param_regexp was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(50): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(50): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(60): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(60): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(70): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(70): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(80): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(80): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(90): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(90): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(100): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(100): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(108): web_reg_find started  	[MsgId: MMSG-26355]
+Flight_Booking.c(108): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(112): Notify: Transaction "SC02_BookingFlight_T03_ClickFlights" started.
+Flight_Booking.c(114): web_url("Search Flights Button") started  	[MsgId: MMSG-26355]
+Flight_Booking.c(114): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+Flight_Booking.c(114): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+Flight_Booking.c(114): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+Flight_Booking.c(114): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+Flight_Booking.c(114): Detected non-resource "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search"  	[MsgId: MMSG-26574]
+Flight_Booking.c(114): Detected non-resource "http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome" in "http://127.0.0.1:1080/cgi-bin/welcome.pl?page=search"  	[MsgId: MMSG-26574]
+Flight_Booking.c(114): Found resource "http://127.0.0.1:1080/WebTours/images/in_flights.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights"  	[MsgId: MMSG-26659]
+Flight_Booking.c(114): Resource "http://127.0.0.1:1080/WebTours/images/itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Flight_Booking.c(114): Found resource "http://127.0.0.1:1080/WebTours/images/home.gif" in HTML "http://127.0.0.1:1080/cgi-bin/nav.pl?page=menu&in=flights"  	[MsgId: MMSG-26659]
+Flight_Booking.c(114): Resource "http://127.0.0.1:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Flight_Booking.c(114): Notify: Saving Parameter "cAdvDiscount = 0".
+Flight_Booking.c(114): Notify: Saving Parameter "cSeatPreference_1 = Aisle".
+Flight_Booking.c(114): Notify: Saving Parameter "cSeatPreference_2 = Window".
+Flight_Booking.c(114): Notify: Saving Parameter "cSeatPreference_3 = None".
+Flight_Booking.c(114): Notify: Saving Parameter "cSeatType_1 = First".
+Flight_Booking.c(114): Notify: Saving Parameter "cSeatType_2 = Business".
+Flight_Booking.c(114): Notify: Saving Parameter "cSeatType_3 = Coach".
+Flight_Booking.c(114): Notify: Saving Parameter "cCGIField1 = roundtrip".
+Flight_Booking.c(114): Notify: Saving Parameter "cCGIField2 = seatType".
+Flight_Booking.c(114): Notify: Saving Parameter "cCGIField3 = seatPref".
+Flight_Booking.c(114): Found resource "http://127.0.0.1:1080/WebTours/images/button_next.gif" in HTML "http://127.0.0.1:1080/cgi-bin/reservations.pl?page=welcome"  	[MsgId: MMSG-26659]
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_1 = Denver".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_2 = Frankfurt".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_3 = London".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_4 = Los Angeles".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_5 = Paris".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_6 = Portland".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_7 = San Francisco".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_8 = Seattle".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_9 = Sydney".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_10 = Zurich".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_11 = Denver".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_12 = Frankfurt".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_13 = London".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_14 = Los Angeles".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_15 = Paris".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_16 = Portland".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_17 = San Francisco".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_18 = Seattle".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_19 = Sydney".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_20 = Zurich".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_1 = Denver".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_2 = Frankfurt".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_3 = London".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_4 = Los Angeles".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_5 = Paris".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_6 = Portland".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_7 = San Francisco".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_8 = Seattle".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_9 = Sydney".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_10 = Zurich".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_11 = Denver".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_12 = Frankfurt".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_13 = London".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_14 = Los Angeles".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_15 = Paris".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_16 = Portland".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_17 = San Francisco".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_18 = Seattle".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_19 = Sydney".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_20 = Zurich".
+Flight_Booking.c(114): Notify: Saving Parameter "cDepartureCity_count = 20".
+Flight_Booking.c(114): Notify: Saving Parameter "cArrivalCity_count = 20".
+Flight_Booking.c(114): Notify: Saving Parameter "cSeatPreference_count = 3".
+Flight_Booking.c(114): Notify: Saving Parameter "cSeatType_count = 3".
+Flight_Booking.c(114): Registered web_reg_find successful for "Text=Find Flight" (count=1)  	[MsgId: MMSG-26364]
+Flight_Booking.c(114): Notify: Saving Parameter "FindFlight_Count = 1".
+Flight_Booking.c(114): web_url("Search Flights Button") was successful, 8516 body bytes, 1620 header bytes, 43 chunking overhead bytes  	[MsgId: MMSG-26385]
+Flight_Booking.c(124): Notify: Parameter Substitution: parameter "FindFlight_Count" =  "1"
+Flight_Booking.c(126): Notify: Transaction "SC02_BookingFlight_T03_ClickFlights" ended with a "Pass" status (Duration: 0.2226 Wasted Time: 0.0138).
+Flight_Booking.c(134): web_convert_param started  	[MsgId: MMSG-26355]
+Flight_Booking.c(134): Notify: Parameter Substitution: parameter "pDeptDate" =  "06/01/2020"
+Flight_Booking.c(134): Notify: Saving Parameter "tomDateFormat = 06%2F01%2F2020".
+Flight_Booking.c(134): web_convert_param was successful  	[MsgId: MMSG-26392]
+Flight_Booking.c(136): web_convert_param started  	[MsgId: MMSG-26355]
+Flight_Booking.c(136): Notify: Parameter Substitution: parameter "pReturnDate" =  "06/03/2020"
+Flight_Booking.c(136): Notify: Saving Parameter "nextDateFormat = 06%2F03%2F2020".
+Flight_Booking.c(136): web_convert_param was successful  	[MsgId: MMSG-26392]
+Flight_Booking.c(138): The Departure Cities are:
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_1" =  "Denver"
+Flight_Booking.c(143): Denver
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_2" =  "Frankfurt"
+Flight_Booking.c(143): Frankfurt
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_3" =  "London"
+Flight_Booking.c(143): London
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_4" =  "Los Angeles"
+Flight_Booking.c(143): Los Angeles
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_5" =  "Paris"
+Flight_Booking.c(143): Paris
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_6" =  "Portland"
+Flight_Booking.c(143): Portland
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_7" =  "San Francisco"
+Flight_Booking.c(143): San Francisco
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_8" =  "Seattle"
+Flight_Booking.c(143): Seattle
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_9" =  "Sydney"
+Flight_Booking.c(143): Sydney
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_10" =  "Zurich"
+Flight_Booking.c(143): Zurich
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_11" =  "Denver"
+Flight_Booking.c(143): Denver
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_12" =  "Frankfurt"
+Flight_Booking.c(143): Frankfurt
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_13" =  "London"
+Flight_Booking.c(143): London
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_14" =  "Los Angeles"
+Flight_Booking.c(143): Los Angeles
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_15" =  "Paris"
+Flight_Booking.c(143): Paris
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_16" =  "Portland"
+Flight_Booking.c(143): Portland
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_17" =  "San Francisco"
+Flight_Booking.c(143): San Francisco
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_18" =  "Seattle"
+Flight_Booking.c(143): Seattle
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_19" =  "Sydney"
+Flight_Booking.c(143): Sydney
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(143): Notify: Parameter Substitution: parameter "cDepartureCity_20" =  "Zurich"
+Flight_Booking.c(143): Zurich
+Flight_Booking.c(140): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(149): Notify: Parameter Substitution: parameter "cDepartureCity_count" =  "20"
+Flight_Booking.c(149): Notify: Parameter Substitution: parameter "cDepartureCity_19" =  "Sydney"
+Flight_Booking.c(150): Notify: Parameter Substitution: parameter "cArrivalCity_count" =  "20"
+Flight_Booking.c(150): Notify: Parameter Substitution: parameter "cArrivalCity_14" =  "Los Angeles"
+Flight_Booking.c(154): Notify: Saving Parameter "pDepartureCity = Sydney".
+Flight_Booking.c(156): Notify: Saving Parameter "pArrivalCity = Los Angeles".
+Flight_Booking.c(158): Notify: Parameter Substitution: parameter "cSeatPreference_count" =  "3"
+Flight_Booking.c(158): Notify: Parameter Substitution: parameter "cSeatPreference_2" =  "Window"
+Flight_Booking.c(160): Notify: Saving Parameter "pSeatPreference = Window".
+Flight_Booking.c(162): Notify: Parameter Substitution: parameter "cSeatType_count" =  "3"
+Flight_Booking.c(162): Notify: Parameter Substitution: parameter "cSeatType_3" =  "Coach"
+Flight_Booking.c(164): Notify: Saving Parameter "pSeatType = Coach".
+Flight_Booking.c(166): Notify: Saving Parameter "pReqBody = ".
+Flight_Booking.c(168): Notify: Parameter Substitution: parameter "pReqBody" =  ""
+Flight_Booking.c(168): Notify: Parameter Substitution: parameter "cAdvDiscount" =  "0"
+Flight_Booking.c(168): Notify: Parameter Substitution: parameter "pDepartureCity" =  "Sydney"
+Flight_Booking.c(168): Notify: Parameter Substitution: parameter "pArrivalCity" =  "Los Angeles"
+Flight_Booking.c(168): Notify: Parameter Substitution: parameter "pPassengerNo" =  "3"
+Flight_Booking.c(168): Notify: Parameter Substitution: parameter "cCGIField1" =  "roundtrip"
+Flight_Booking.c(168): Notify: Parameter Substitution: parameter "cCGIField2" =  "seatType"
+Flight_Booking.c(168): Notify: Parameter Substitution: parameter "cCGIField3" =  "seatPref"
+Flight_Booking.c(168): Notify: Parameter Substitution: parameter "tomDateFormat" =  "06%2F01%2F2020"
+Flight_Booking.c(168): Notify: Parameter Substitution: parameter "nextDateFormat" =  "06%2F03%2F2020"
+Flight_Booking.c(168): Notify: Saving Parameter "pReqBody = advanceDiscount=0&depart=Sydney&arrive=Los Angeles&numPassengers=3&seatPref=Window&seatType=Coach&findFlights.x=49&findFlights.y=5&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref&departDate=06%2F01%2F2020&returnDate=06%2F03%2F2020".
+Flight_Booking.c(172): Notify: Parameter Substitution: parameter "pRandRoundTrip" =  "7"
+Flight_Booking.c(177): Notify: Parameter Substitution: parameter "pReqBody" =  "advanceDiscount=0&depart=Sydney&arrive=Los Angeles&numPassengers=3&seatPref=Window&seatType=Coach&findFlights.x=49&findFlights.y=5&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref&departDate=06%2F01%2F2020&returnDate=06%2F03%2F2020"
+Flight_Booking.c(177): advanceDiscount=0&depart=Sydney&arrive=Los Angeles&numPassengers=3&seatPref=Window&seatType=Coach&findFlights.x=49&findFlights.y=5&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref&departDate=06236711073314708917985673257303173248233849219095916776284765061771709371253895176088397851746855310895657312510051049588969352366616174161164263041361615412005058379478185115319220281399984443759458331996095196984397645888452837007933046784.000000010.0000002020&returnDate=060.000000030.0000002020
+Flight_Booking.c(179): Think time - Waiting 5.00 seconds (according to limit).
+Flight_Booking.c(179): lr_think_time: 5.00 seconds (recorded think time was 10.00 seconds).
+Flight_Booking.c(181): Notify: Parameter Substitution: parameter "pDeptDate" =  "06/01/2020"
+Flight_Booking.c(181): Departure Date: 06/01/2020
+Flight_Booking.c(183): Notify: Parameter Substitution: parameter "pReturnDate" =  "06/03/2020"
+Flight_Booking.c(183): Arrival Date: 06/03/2020
+Flight_Booking.c(187): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(187): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(197): Notify: Parameter Substitution: parameter "pRandRoundTrip" =  "7"
+Flight_Booking.c(208): web_reg_find started  	[MsgId: MMSG-26355]
+Flight_Booking.c(208): Notify: Parameter Substitution: parameter "pDepartureCity" =  "Sydney"
+Flight_Booking.c(208): Notify: Parameter Substitution: parameter "pArrivalCity" =  "Los Angeles"
+Flight_Booking.c(208): Notify: Parameter Substitution: parameter "pDeptDate" =  "06/01/2020"
+Flight_Booking.c(208): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(212): Notify: Transaction "SC02_BookingFlight_T04_FindFlights" started.
+Flight_Booking.c(214): web_custom_request("reservations.pl") started  	[MsgId: MMSG-26355]
+Flight_Booking.c(214): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+Flight_Booking.c(214): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+Flight_Booking.c(214): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+Flight_Booking.c(214): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+Flight_Booking.c(214): Notify: Parameter Substitution: parameter "pReqBody" =  "advanceDiscount=0&depart=Sydney&arrive=Los Angeles&numPassengers=3&seatPref=Window&seatType=Coach&findFlights.x=49&findFlights.y=5&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatPref&departDate=06%2F01%2F2020&returnDate=06%2F03%2F2020"
+Flight_Booking.c(214): Notify: Saving Parameter "cOutboundFlight_1 = 830;669;06/01/2020".
+Flight_Booking.c(214): Notify: Saving Parameter "cOutboundFlight_2 = 831;596;06/01/2020".
+Flight_Booking.c(214): Notify: Saving Parameter "cOutboundFlight_3 = 832;633;06/01/2020".
+Flight_Booking.c(214): Notify: Saving Parameter "cOutboundFlight_4 = 833;548;06/01/2020".
+Flight_Booking.c(214): Notify: Saving Parameter "cOutboundFlight_count = 4".
+Flight_Booking.c(214): Registered web_reg_find successful for "Text=Flight departing from <B>Sydney</B> to <B>Los Angeles</B> on <B>06/01/2020</B>" (count=1)  	[MsgId: MMSG-26364]
+Flight_Booking.c(214): Notify: Saving Parameter "FlightMessage_Count = 1".
+Flight_Booking.c(214): web_custom_request("reservations.pl") was successful, 2448 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Flight_Booking.c(252): Notify: Parameter Substitution: parameter "FlightMessage_Count" =  "1"
+Flight_Booking.c(254): Notify: Transaction "SC02_BookingFlight_T04_FindFlights" ended with a "Pass" status (Duration: 0.1507 Wasted Time: 0.0090).
+Flight_Booking.c(262): Notify: Parameter Substitution: parameter "cOutboundFlight_count" =  "4"
+Flight_Booking.c(262): Notify: Parameter Substitution: parameter "cOutboundFlight_1" =  "830;669;06/01/2020"
+Flight_Booking.c(264): Notify: Saving Parameter "pOutboundFlight = 830;669;06/01/2020".
+Flight_Booking.c(266): web_convert_param started  	[MsgId: MMSG-26355]
+Flight_Booking.c(266): Notify: Parameter Substitution: parameter "pOutboundFlight" =  "830;669;06/01/2020"
+Flight_Booking.c(266): Notify: Saving Parameter "pDepartureFlight = 830%3B669%3B06%2F01%2F2020".
+Flight_Booking.c(266): web_convert_param was successful  	[MsgId: MMSG-26392]
+Flight_Booking.c(268): Notify: Saving Parameter "pReqBody1 = ".
+Flight_Booking.c(270): Notify: Parameter Substitution: parameter "pReqBody1" =  ""
+Flight_Booking.c(270): Notify: Parameter Substitution: parameter "pPassengerNo" =  "3"
+Flight_Booking.c(270): Notify: Parameter Substitution: parameter "cAdvDiscount" =  "0"
+Flight_Booking.c(270): Notify: Parameter Substitution: parameter "pDepartureFlight" =  "830%3B669%3B06%2F01%2F2020"
+Flight_Booking.c(270): Notify: Saving Parameter "pReqBody1 = numPassengers=3&advanceDiscount=0&seatType=Coach&seatPref=Window&reserveFlights.x=49&reserveFlights.y=5&outboundFlight=830%3B669%3B06%2F01%2F2020".
+Flight_Booking.c(274): Notify: Parameter Substitution: parameter "pRandRoundTrip" =  "7"
+Flight_Booking.c(285): Notify: Parameter Substitution: parameter "pReqBody1" =  "numPassengers=3&advanceDiscount=0&seatType=Coach&seatPref=Window&reserveFlights.x=49&reserveFlights.y=5&outboundFlight=830%3B669%3B06%2F01%2F2020"
+Flight_Booking.c(285): numPassengers=3&advanceDiscount=0&seatType=Coach&seatPref=Window&reserveFlights.x=49&reserveFlights.y=5&outboundFlight=830B669B06236711073314708917985673257303173248233849219095916776284765061771709371253895176088397851746855310895657312510051049588969352366616174161164263041361615412005058379478185115319220281399984443759458331996095196984397645888452837007933046784.000000010.0000002020
+Flight_Booking.c(287): Think time - Waiting 5.00 seconds (according to limit).
+Flight_Booking.c(287): lr_think_time: 5.00 seconds (recorded think time was 10.00 seconds).
+Flight_Booking.c(291): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(291): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(301): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(301): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(311): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(311): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(321): web_reg_save_param_ex started  	[MsgId: MMSG-26355]
+Flight_Booking.c(321): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(329): Notify: Transaction "SC02_BookingFlight_T05_SelectFlight" started.
+Flight_Booking.c(331): web_reg_find started  	[MsgId: MMSG-26355]
+Flight_Booking.c(331): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(335): web_custom_request("reservations.pl_2") started  	[MsgId: MMSG-26355]
+Flight_Booking.c(335): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+Flight_Booking.c(335): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+Flight_Booking.c(335): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+Flight_Booking.c(335): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+Flight_Booking.c(335): Notify: Parameter Substitution: parameter "pReqBody1" =  "numPassengers=3&advanceDiscount=0&seatType=Coach&seatPref=Window&reserveFlights.x=49&reserveFlights.y=5&outboundFlight=830%3B669%3B06%2F01%2F2020"
+Flight_Booking.c(335): Notify: Saving Parameter "cSaveCC = on".
+Flight_Booking.c(335): Notify: Saving Parameter "cOldCCOption = on".
+Flight_Booking.c(335): Notify: Saving Parameter "cJSFormSubmit = off".
+Flight_Booking.c(335): Notify: Saving Parameter "cCGIFields4 = saveCC".
+Flight_Booking.c(335): Registered web_reg_find successful for "Text=Save this Credit Card Information" (count=1)  	[MsgId: MMSG-26364]
+Flight_Booking.c(335): Notify: Saving Parameter "SaveCCardInfo_Count = 1".
+Flight_Booking.c(335): web_custom_request("reservations.pl_2") was successful, 2965 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Flight_Booking.c(367): Notify: Parameter Substitution: parameter "SaveCCardInfo_Count" =  "1"
+Flight_Booking.c(369): Notify: Transaction "SC02_BookingFlight_T05_SelectFlight" ended with a "Pass" status (Duration: 0.1380 Wasted Time: 0.0057).
+Flight_Booking.c(377): Think time - Waiting 5.00 seconds (according to limit).
+Flight_Booking.c(377): lr_think_time: 5.00 seconds (recorded think time was 10.00 seconds).
+Flight_Booking.c(379): web_convert_param started  	[MsgId: MMSG-26355]
+Flight_Booking.c(379): Notify: Parameter Substitution: parameter "pRandNum" =  "4159"
+Flight_Booking.c(379): Notify: Parameter Substitution: parameter "pRandNum" =  "8554"
+Flight_Booking.c(379): Notify: Parameter Substitution: parameter "pRandNum" =  "7125"
+Flight_Booking.c(379): Notify: Parameter Substitution: parameter "pRandNum" =  "3078"
+Flight_Booking.c(379): Notify: Saving Parameter "pCreditCardNumber = 4159+8554+7125+3078".
+Flight_Booking.c(379): web_convert_param was successful  	[MsgId: MMSG-26392]
+Flight_Booking.c(381): web_convert_param started  	[MsgId: MMSG-26355]
+Flight_Booking.c(381): Notify: Parameter Substitution: parameter "pExpiryDate" =  "11/25"
+Flight_Booking.c(381): Notify: Saving Parameter "pExpDate = 11%2F25".
+Flight_Booking.c(381): web_convert_param was successful  	[MsgId: MMSG-26392]
+Flight_Booking.c(383): Notify: Saving Parameter "pReqBody2 = ".
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "pReqBody2" =  ""
+Flight_Booking.c(385): Notify: Getting new value for parameter 'pFirstName': table = './InputDataset.csv' column = '2' row = '3'.
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "pFirstName" =  "Yudhajit"
+Flight_Booking.c(385): Notify: Getting new value for parameter 'pLastName': table = './InputDataset.csv' column = '3' row = '6'.
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "pLastName" =  "Mishra"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "pAddress1" =  "Unit-10"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "pAddress2" =  "Pune"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "pCreditCardNumber" =  "4159+8554+7125+3078"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "pExpDate" =  "11%2F25"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "pPassengerNo" =  "3"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "pDepartureFlight" =  "830%3B669%3B06%2F01%2F2020"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "cAdvDiscount" =  "0"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "cSaveCC" =  "on"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "cOldCCOption" =  "on"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "cJSFormSubmit" =  "off"
+Flight_Booking.c(385): Notify: Parameter Substitution: parameter "cCGIFields4" =  "saveCC"
+Flight_Booking.c(385): Notify: Saving Parameter "pReqBody2 = firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC".
+Flight_Booking.c(391): Notify: Parameter Substitution: parameter "pPassengerNo" =  "3"
+Flight_Booking.c(393): web_convert_param started  	[MsgId: MMSG-26355]
+Flight_Booking.c(393): Notify: Next row for parameter pFirstName = 8 [table  = pFirstName].
+Flight_Booking.c(393): Notify: Getting new value for parameter 'pFirstName': table = './InputDataset.csv' column = '2' row = '8'.
+Flight_Booking.c(393): Notify: Parameter Substitution: parameter "pFirstName" =  "Adil"
+Flight_Booking.c(393): Notify: Next row for parameter pLastName = 4 [table  = pLastName].
+Flight_Booking.c(393): Notify: Getting new value for parameter 'pLastName': table = './InputDataset.csv' column = '3' row = '4'.
+Flight_Booking.c(393): Notify: Parameter Substitution: parameter "pLastName" =  "Sharma"
+Flight_Booking.c(393): Notify: Saving Parameter "pPassengerName = Adil+Sharma".
+Flight_Booking.c(393): web_convert_param was successful  	[MsgId: MMSG-26392]
+Flight_Booking.c(395): Notify: Parameter Substitution: parameter "pReqBody2" =  "firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC"
+Flight_Booking.c(395): Notify: Parameter Substitution: parameter "pPassengerName" =  "Adil+Sharma"
+Flight_Booking.c(395): Notify: Saving Parameter "pReqBody2 = firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC&pass1=Adil+Sharma".
+Flight_Booking.c(391): Notify: Parameter Substitution: parameter "pPassengerNo" =  "3"
+Flight_Booking.c(393): web_convert_param started  	[MsgId: MMSG-26355]
+Flight_Booking.c(393): Notify: Next row for parameter pFirstName = 9 [table  = pFirstName].
+Flight_Booking.c(393): Notify: Getting new value for parameter 'pFirstName': table = './InputDataset.csv' column = '2' row = '9'.
+Flight_Booking.c(393): Notify: Parameter Substitution: parameter "pFirstName" =  "Chris"
+Flight_Booking.c(393): Notify: Next row for parameter pLastName = 9 [table  = pLastName].
+Flight_Booking.c(393): Notify: Getting new value for parameter 'pLastName': table = './InputDataset.csv' column = '3' row = '9'.
+Flight_Booking.c(393): Notify: Parameter Substitution: parameter "pLastName" =  "Moody"
+Flight_Booking.c(393): Notify: Saving Parameter "pPassengerName = Chris+Moody".
+Flight_Booking.c(393): web_convert_param was successful  	[MsgId: MMSG-26392]
+Flight_Booking.c(395): Notify: Parameter Substitution: parameter "pReqBody2" =  "firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC&pass1=Adil+Sharma"
+Flight_Booking.c(395): Notify: Parameter Substitution: parameter "pPassengerName" =  "Chris+Moody"
+Flight_Booking.c(395): Notify: Saving Parameter "pReqBody2 = firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC&pass1=Adil+Sharma&pass2=Chris+Moody".
+Flight_Booking.c(391): Notify: Parameter Substitution: parameter "pPassengerNo" =  "3"
+Flight_Booking.c(393): web_convert_param started  	[MsgId: MMSG-26355]
+Flight_Booking.c(393): Notify: Next row for parameter pFirstName = 1 [table  = pFirstName].
+Flight_Booking.c(393): Notify: Getting new value for parameter 'pFirstName': table = './InputDataset.csv' column = '2' row = '1'.
+Flight_Booking.c(393): Notify: Parameter Substitution: parameter "pFirstName" =  "Swastik"
+Flight_Booking.c(393): Notify: Next row for parameter pLastName = 6 [table  = pLastName].
+Flight_Booking.c(393): Notify: Getting new value for parameter 'pLastName': table = './InputDataset.csv' column = '3' row = '6'.
+Flight_Booking.c(393): Notify: Parameter Substitution: parameter "pLastName" =  "Mishra"
+Flight_Booking.c(393): Notify: Saving Parameter "pPassengerName = Swastik+Mishra".
+Flight_Booking.c(393): web_convert_param was successful  	[MsgId: MMSG-26392]
+Flight_Booking.c(395): Notify: Parameter Substitution: parameter "pReqBody2" =  "firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC&pass1=Adil+Sharma&pass2=Chris+Moody"
+Flight_Booking.c(395): Notify: Parameter Substitution: parameter "pPassengerName" =  "Swastik+Mishra"
+Flight_Booking.c(395): Notify: Saving Parameter "pReqBody2 = firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC&pass1=Adil+Sharma&pass2=Chris+Moody&pass3=Swastik+Mishra".
+Flight_Booking.c(391): Notify: Parameter Substitution: parameter "pPassengerNo" =  "3"
+Flight_Booking.c(398): Notify: Parameter Substitution: parameter "pRandRoundTrip" =  "7"
+Flight_Booking.c(404): Notify: Parameter Substitution: parameter "pReqBody2" =  "firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC&pass1=Adil+Sharma&pass2=Chris+Moody&pass3=Swastik+Mishra"
+Flight_Booking.c(404): Notify: Saving Parameter "pReqBody2 = firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC&pass1=Adil+Sharma&pass2=Chris+Moody&pass3=Swastik+Mishra&returnFlight=".
+Flight_Booking.c(407): Notify: Parameter Substitution: parameter "pReqBody2" =  "firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC&pass1=Adil+Sharma&pass2=Chris+Moody&pass3=Swastik+Mishra&returnFlight="
+Flight_Booking.c(407): firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11236711073314708917985673257303173248233849219095916776284765061771709371253895176088397851746855310895657312510051049588969352366616174161164263041361615412005058379478185115319220281399984443759458331996095196984397645888452837007933046784.00000025&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830B669B060.000000010.0000002020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC&pass1=Adil+Sharma&pass2=Chris+Moody&pass3=Swastik+Mishra&returnFlight=
+Flight_Booking.c(409): Notify: Transaction "SC02_BookingFlight_T06_SetPaymentDetails" started.
+Flight_Booking.c(411): web_reg_find started  	[MsgId: MMSG-26355]
+Flight_Booking.c(411): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Flight_Booking.c(415): web_custom_request("reservations.pl_3") started  	[MsgId: MMSG-26355]
+Flight_Booking.c(415): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+Flight_Booking.c(415): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+Flight_Booking.c(415): Notify: Parameter Substitution: parameter "pServerName" =  "127.0.0.1"
+Flight_Booking.c(415): Notify: Parameter Substitution: parameter "pPortNo" =  "1080"
+Flight_Booking.c(415): Notify: Parameter Substitution: parameter "pReqBody2" =  "firstName=Yudhajit&lastName=Mishra&address1=Unit-10&address2=Pune&creditCard=4159+8554+7125+3078&expDate=11%2F25&numPassengers=3&seatType=Coach&seatPref=Window&outboundFlight=830%3B669%3B06%2F01%2F2020&advanceDiscount=0&buyFlights.x=29&buyFlights.y=7&saveCC=on&oldCCOption=on&JSFormSubmit=off&.cgifields=saveCC&pass1=Adil+Sharma&pass2=Chris+Moody&pass3=Swastik+Mishra&returnFlight="
+Flight_Booking.c(415): Registered web_reg_find successful for "Text=Flight reserved" (count=1)  	[MsgId: MMSG-26364]
+Flight_Booking.c(415): Notify: Saving Parameter "FlightReserved_Count = 1".
+Flight_Booking.c(415): web_custom_request("reservations.pl_3") was successful, 2505 body bytes, 477 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Flight_Booking.c(459): Notify: Parameter Substitution: parameter "FlightReserved_Count" =  "1"
+Flight_Booking.c(461): Notify: Transaction "SC02_BookingFlight_T06_SetPaymentDetails" ended with a "Pass" status (Duration: 0.1312 Wasted Time: 0.0049).
+Flight_Booking.c(469): Think time - Waiting 5.00 seconds (according to limit).
+Flight_Booking.c(469): lr_think_time: 5.00 seconds (recorded think time was 10.00 seconds).
+Flight_Booking.c(473): Notify: Saving Parameter "pReqBody = ".
+Flight_Booking.c(476): Notify: Saving Parameter "pReqBody1 = ".
+Flight_Booking.c(478): Notify: Saving Parameter "pReqBody2 = ".
+Flight_Booking.c(480): Notify: Parameter Substitution: parameter "pReqBody1" =  ""
+Flight_Booking.c(480): 
+Abort was called from an action.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

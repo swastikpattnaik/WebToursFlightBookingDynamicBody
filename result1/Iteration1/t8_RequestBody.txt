@@ -1,0 +1,3 @@
+"advanceDiscount=0&depart=Sydney&arrive=Los Angeles&numPassengers=3&seatPref=Window&seatType=Co"
+"ach&findFlights.x=49&findFlights.y=5&.cgifields=roundtrip&.cgifields=seatType&.cgifields=seatP"
+"ref&departDate=06%2F01%2F2020&returnDate=06%2F03%2F2020"

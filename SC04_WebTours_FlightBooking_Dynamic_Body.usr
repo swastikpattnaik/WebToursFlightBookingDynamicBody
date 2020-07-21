@@ -1,0 +1,77 @@
+[General]
+Type=Multi
+DefaultCfg=default.cfg
+ParameterFile=SC04_WebTours_FlightBooking.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+RunType=cci
+ActionLogicExt=action_logic
+LastActiveAction=Action
+MajorVersion=12
+MinorVersion=60
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+AdditionalTypes=QTWeb
+DevelopTool=Vugen
+LastModifyVer=12.60.0.971
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+LastCodeGenerationVer=12.53.0.1203
+DisableRegenerate=0
+Description=
+ScriptLocale=en-IN
+Encoding=
+[Actions]
+vuser_init=vuser_init.c
+User_Login=User_Login.c
+Flight_Booking=Flight_Booking.c
+User_Signoff=User_Signoff.c
+vuser_end=vuser_end.c
+[RunLogicFiles]
+Default Profile=default.usp
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[ExtraFiles]
+globals.h=
+[Modified Actions]
+vuser_init=1
+User_Login=1
+Flight_Booking=1
+User_Signoff=1
+vuser_end=1
+[Recorded Actions]
+vuser_init=0
+User_Login=0
+Flight_Booking=1
+User_Signoff=0
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+User_Login=1
+Flight_Booking=1
+User_Signoff=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+User_Login=cci
+Flight_Booking=cci
+User_Signoff=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="SC02_BookingFlight_T01_LaunchPage__*delimiter*__SC02_BookingFlight_T02_Login__*delimiter*__SC02_BookingFlight_T03_ClickFlights__*delimiter*__SC02_BookingFlight_T04_FindFlights__*delimiter*__SC02_BookingFlight_T05_SelectFlight__*delimiter*__SC02_BookingFlight_T06_SetPaymentDetails__*delimiter*__SC02_BookingFlight_T07_SignOff"
+[StateManagement]
+LastReplayStatus=3
+[ActiveReplay]
+LastReplayedRunName=result1
+ActiveRunName=result1
+[Transactions]
+SC02_BookingFlight_T01_LaunchPage=
+SC02_BookingFlight_T02_Login=
+SC02_BookingFlight_T03_ClickFlights=
+SC02_BookingFlight_T04_FindFlights=
+SC02_BookingFlight_T05_SelectFlight=
+SC02_BookingFlight_T06_SetPaymentDetails=
+SC02_BookingFlight_T07_SignOff=

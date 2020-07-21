@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>SC04_WebTours_FlightBooking_Dynamic_Body</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="User_Login.c" Filter="2" />
+    <FileEntry Name="Flight_Booking.c" Filter="2" />
+    <FileEntry Name="User_Signoff.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="SC04_WebTours_FlightBooking_Dynamic_Body.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="SC04_WebTours_FlightBooking.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="InputDataset.csv" Filter="2" />
+    <FileEntry Name="server-details.csv" Filter="2" />
+    <FileEntry Name="Watches.xml" Filter="2" />
+    <FileEntry Name="combined_SC04_WebTours_FlightBooking_Dynamic_Body.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="163854860440.idx" Filter="1" />
+    <FileEntry Name="227564062440.idx" Filter="1" />
+    <FileEntry Name="239624638440.idx" Filter="1" />
+    <FileEntry Name="23962463844_Dau.69.idx" Filter="1" />
+    <FileEntry Name="23962463844_EfY.359.idx" Filter="1" />
+    <FileEntry Name="76266201440.idx" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv3Ea.789.log" Filter="1" />
+    <FileEntry Name="mdrvhZ7.583.log" Filter="1" />
+    <FileEntry Name="mdrvNlG.531.log" Filter="1" />
+    <FileEntry Name="mdrvqEN.799.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="SC04_WebTours_FlightBooking.prm.bak" Filter="1" />
+    <FileEntry Name="SC04_WebTours_FlightBooking_Dynamic_Body.c.pickle" Filter="1" />
+    <FileEntry Name="SC04_WebTours_FlightBooking_Dynamic_Body.ci" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="data\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>
